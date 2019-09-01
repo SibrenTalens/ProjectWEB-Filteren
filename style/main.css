@@ -1,4 +1,4 @@
-*,
+s*,
 *::before,
 *::after { 
   box-sizing: border-box;
@@ -118,6 +118,16 @@ main section.articles {
 	align-content: flex-start;
 }
 
+@media (min-width: 40rem) {
+  main section.articles article {
+    width: 50%;
+  }
+}
+@media (min-width: 56rem) {
+  main section.articles article {
+    width: 33.3333%;
+  }
+}
 article {
   background-color: white;
   display: inline-block;

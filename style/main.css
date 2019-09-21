@@ -214,6 +214,7 @@ img {
 .card:hover .card__image {
   -webkit-filter: contrast(100%);
           filter: contrast(100%);
+          cursor: pointer;
 }
 .card__content {
   display: flex;

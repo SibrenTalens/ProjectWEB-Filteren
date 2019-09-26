@@ -181,6 +181,44 @@ img {
   width: 100%;
 }
 
+#heart {
+  border-radius: 365px;
+  border-style: none;
+  position: relative;
+  right: 0;
+  z-index: 999;
+  background-color: #fff;
+  color: red;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  width: 3em;
+  height: 3em;
+  align-items: end;
+}
+
+#heart .liked {
+  color: white;
+  background-color: red;
+}
+
+#heart:hover {
+  transform: scale(1.5);
+}
+
+#heart:focus {
+  outline: 0;
+}
+
+.fa-heart-o {
+  color: white;
+  cursor: pointer;
+}
+
+.fa-heart {
+  color: red;
+  cursor: pointer;
+}
+
+
 .cards {
   display: flex;
   flex-wrap: wrap;

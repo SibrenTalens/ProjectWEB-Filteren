@@ -1,13 +1,3 @@
-$(document).ready(function(){
-  $("#heart").click(function(){
-    if($("#heart").hasClass("liked")){
-      $("#heart").removeClass("liked");
-      $("#heart").removeClass("fa-heart-o");
-      $("#heart").addClass("fa-heart");
-    }else{
-      $("#heart").addClass("liked");
-      $("#heart").removeClass("fa-heart");
-      $("#heart").addClass("fa-heart-o");
-    }
-  });
+$('.fa-heart-o').on('click',function() {
+  $(this).find("i").toggleClass("far fas selected-heart border-heart bounce-top");
 });

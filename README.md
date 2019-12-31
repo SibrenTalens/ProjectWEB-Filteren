@@ -11,3 +11,4 @@ Met javascript een zoekbalk pas weergeven wanneer er op een zoekbutton wordt ged
 Met javascript binnen de titels van cards zoeken // input text value moet deels gelijk zijn aan de titel.
 
 Bekijk nu de website live:
+https://jkoenen99.github.io/ProjectWEB-Filteren/

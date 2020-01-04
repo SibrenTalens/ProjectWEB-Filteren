@@ -4,18 +4,20 @@ var spanicon = document.querySelector('span.fa');
 
 searchbutton.addEventListener('click', function() {
     searchbutton.classList.add('active');
-    searchbox.classList.add('active');
+    searchbox.classList.add('active', 'slide-in-right');
     searchbox.focus();
-    spanicon.classList.replace('fa-search', 'fa-js-square');
+    spanicon.classList.replace('fa-search', 'fa-spinner');
+    spanicon.classList.add('rotate-scale-up');
     console.log('actie');
 });
 
 var main = document.querySelector('main');
 
 main.addEventListener('click', function() {
-  spanicon.classList.replace('fa-js-square', 'fa-search');
+  spanicon.classList.replace('fa-spinner', 'fa-search');
   searchbox.classList.remove('active');
   searchbutton.classList.remove('active');
+  spanicon.classList.remove('rotate-scale-up');
   console.log('klik weg');
 });
 

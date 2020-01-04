@@ -103,6 +103,7 @@ input.search-box {
   display: none;
   border: 1px solid grey;
   border-radius: 100%;
+  z-index: -2;
 }
 
 input.search-box.active {
@@ -116,6 +117,7 @@ button.search-button {
   border: 0;
   background-color: #bc0f00;
   transition: 0.5s;
+  z-index: 1;
 }
 
 button.search-button:hover {
@@ -140,7 +142,7 @@ button.search-button span {
 
 button.search-button.active {
   border-radius: 0;
-  width: 0.2em;
+  width: 3em;
 }
 
 #heart {

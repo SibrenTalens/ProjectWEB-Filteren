@@ -1,104 +1,289 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>RET-Verhalen: Alle verhalen</title>
-    <meta name="description" content="Bekijk en lees de mooiste verhalen, aangeboden door de RET in samenwerking met Jasper Koenen">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Card Layout with CSS Grid</title>
+    <link rel="stylesheet" href="style/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style/animations.css">
   </head>
-  <header>
-    <ul>
-      <li>
-        <img class="logo" src="img/logo.svg">
-      </li>
-      <li>
-        <h1>Alle verhalen</h1>
-      </li>
-      <li class="search-container">
-        <input type="text" class="search-box" name="searchbox" id="myInput" onkeyup="myFunction()" placeholder="Zoek verhalen..."></input>
-        <button class="search-button" name="searchbutton"><span class="fa fa-search"></span></button>
-      </li>
-    </ul>
-  </header>
-  <main>
-    
-    <section class="cards">
-       
-      <ul class="cards" id="mySection">
-        
-        <li class="cards__item slide-in-left">
-          <article class="card">
-            <img class="card__image" src="img/onomatopee.png" alt="Onomatopee artwork door Jasper">
-            <button class="fa fa-heart-o" aria-hidden="true" id="heart">
-                <span class="heart"><i class="fa-heart far border-heart"></i></span>
-              </button>
-            <section class="card__content">
-              <h2 class="card__title"><span class="h2__border"><a href="#">Onomatopee <span class="card__number">(77)</span></a></span></h2>
-              <p class="card__short_text">De ronk-ronk-bus komt met piiieeepende remmen tot stilstand en opent sssslissend en sssissend haar deuren. Ik stap-stap-stap uit de bus en push oef-oef de kinderwagen voort waarvan de rrrollende wielen mijn zzzlapende zoontje dragen. Sloffende mensen staren naar de grond, zingende tramkabels zwiepen tegen een grauwgrijze hemel.</p>
-            </section>
-            <button class="btn btn--block card__btn">lezen</button>
-          </article>
-        </li>
-        
-         <li class="cards__item slide-in-left">
-          <article class="card">
-            <img class="card__image" src="img/pulpsw.jpg" alt="Lepra artwork door Rens">
-            <button class="fa fa-heart-o" aria-hidden="true" id="heart">
-                <span class="heart"><i class="fa-heart far border-heart"></i></span>
-              </button>
-            <section class="card__content">
-              <h2 class="card__title"><span class="h2__border"><a href="#">Lepra <span class="card__number">(25)</span></a></span></h2>
-              <p class="card__short_text">Op Centraal Station stap ik af van de kar die lijken ophaalt. Ik had een lift gekregen. Mijn zoon ligt in zijn wagentje te slapen. Arm ventje. Gelukkig weet hij niet dat er een lepra-epidemie heerst in Amsterdam. Zijn wagentje is hermetisch afgesloten, er hangt een zuurstoftankje aan. Hier leeft hij in, wij hopen dat er zo geen bacillen bij hem kunnen komen.</p>
-            </section>
-            <button class="btn btn--block card__btn">lezen</button>
-          </article>
-        </li>
-
-         <li class="cards__item slide-in-left">
-          <article class="card">
-            <img class="card__image" src="img/presentator.jpg" alt="Raket artwork voor de presentator door Jorik">
-            <button class="fa fa-heart-o" aria-hidden="true" id="heart">
-                <span class="heart"><i class="fa-heart far border-heart"></i></span>
-              </button>
-            <section class="card__content">
-              <h2 class="card__title"><span class="h2__border"><a href="#">Presentator die ten onrechte denkt aansluiting te hebben gevonden bij 'de kids'<span class="card__number">(85)</span></a></span></h2>
-              <p class="card__short_text">Yo kids! Vet cool dat je weer kijkt! Hoor mijn verhaal: Ik stapte laatst de bus uit op het stadionplein. Je weet togh?! Ik duwde mijn zoon die in zijn superlauwe, gifgroene kinderwagen lag te ronken. Het was druk op het plein, maar de mensen waren me toch een partijtje chaggie! Niet normaal meer.</p>
-            </section>
-            <button class="btn btn--block card__btn">lezen</button>
-          </article>
-        </li>
-
-         <li class="cards__item slide-in-left">
-          <article class="card">
-            <img class="card__image" src="img/pulpsw.jpg" alt="Starwars in pulpfiction stijl">
-            <button class="fa fa-heart-o" aria-hidden="true" id="heart">
-                <span class="heart"><i class="fa-heart far border-heart"></i></span>
-              </button>
-            <section class="card__content">
-              <h2 class="card__title"><span class="h2__border"><a href="#">Pulp Wars <span class="card__number">(99)</span></a></span></h2>
-              <p class="card__short_text">Star Wars is een serie films over personages in een sterrenstelsel hier ver vandaan. De personages die ik het vetste vind in de films zijn Boba Fett en Jango Fett. De kostuums van deze personages zien er badass uit. Ik verzamel figuurtjes en posters van deze personages.</p>
-            </section>
-            <button class="btn btn--block card__btn">lezen</button>
-          </article>
-        </li>
-      </ul>
-      
-      
-      
-    </section>
-    <section class="actie">
-      <span class="line">
-      </span>
-      <h2>
-      Op zoek naar informatie over reistijden en vertrekpunten van de RET?
-      </h2>
-      <div><a target="blank" href="https://www.RET.nl">Naar de RET website gaan <span class="fa fa-arrow-right"></span></a></div>
-    </section>
-   
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <body>
+      <header>
+          <ul>
+            <li>
+              <img class="logo" src="img/logo.svg">
+            </li>
+            <li>
+              <h1>Alle verhalen</h1>
+            </li>
+            <li class="search-container">
+              <input type="text" class="search-box" name="searchbox" id="myInput" onkeyup="myFunction()" placeholder="Zoek verhalen..."></input>
+              <button class="search-button" name="searchbutton"><span class="fa fa-search"></span></button>
+            </li>
+          </ul>
+        </header>
+    <main>
+      <section class="verhalen slide-in-left">
+        <section class="cards" id="mySection">
+          <div class="card">
+            <a href="#">
+            <div class="card__image-container">
+              <img
+              src="img/onomatopee.png" alt="Onomatopee artwork door Jasper"
+              />
+            </div>
+              <div class="card__content">
+                <h2 class="card__title text--medium">
+                  Onomatopee (66)
+                </h2>
+                <p class="text--medium">Hier is de langere beschrijving van dit verhaal die meerdere regels bevat. En daarnaast ook erg lang is. Hopelijk past dit.</p>
+            </a>
+              <div class="card__info">
+                <p class="text--medium">
+                  <i class="time__icon fa-hourglass-half fas"></i> 30 Min
+                </p>
+                <p class="card__category text--medium">Chaos</p>
+                <div class="fa fa-heart-o" aria-hidden="true" id="heart">
+                  <span class="heart"
+                    ><i class="fa-heart far border-heart"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+              <a href="#">
+              <div class="card__image-container">
+                <img
+                src="img/presentator.jpg" alt="Onomatopee artwork door Jasper"
+                />
+              </div>
+                <div class="card__content">
+                  <h2 class="card__title text--medium">
+                    Presentator die ten onrechte denkt aansluting te hebben gevonden bij 'de kids' (85)
+                  </h2>
+                  <p class="text--medium">Hier is de langere beschrijving van dit verhaal die meerdere regels bevat. En daarnaast ook erg lang is. Hopelijk past dit.</p>
+              </a>
+                <div class="card__info">
+                  <p class="text--medium">
+                    <i class="time__icon fa-hourglass-half fas"></i> 30 Min
+                  </p>
+                  <p class="card__category text--medium">Chaos</p>
+                  <div class="fa fa-heart-o" aria-hidden="true" id="heart">
+                    <span class="heart"
+                      ><i class="fa-heart far border-heart"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+                <a href="#">
+                <div class="card__image-container">
+                  <img
+                  src="img/Lepra.jpg" alt="Onomatopee artwork door Jasper"
+                  />
+                </div>
+                  <div class="card__content">
+                    <h2 class="card__title text--medium">
+                      Onomatopee (66)
+                    </h2>
+                    <p class="text--medium">Hier is de langere beschrijving van dit verhaal die meerdere regels bevat. En daarnaast ook erg lang is. Hopelijk past dit.</p>
+                </a>
+                  <div class="card__info">
+                    <p class="text--medium">
+                      <i class="time__icon fa-hourglass-half fas"></i> 30 Min
+                    </p>
+                    <p class="card__category text--medium">Chaos</p>
+                    <div class="fa fa-heart-o" aria-hidden="true" id="heart">
+                      <span class="heart"
+                        ><i class="fa-heart far border-heart"></i
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                  <a href="#">
+                  <div class="card__image-container">
+                    <img
+                    src="img/onomatopee.png" alt="Onomatopee artwork door Jasper"
+                    />
+                  </div>
+                    <div class="card__content">
+                      <h2 class="card__title text--medium">
+                        Onomatopee (66)
+                      </h2>
+                      <p class="text--medium">Hier is de langere beschrijving van dit verhaal die meerdere regels bevat. En daarnaast ook erg lang is. Hopelijk past dit.</p>
+                  </a>
+                    <div class="card__info">
+                      <p class="text--medium">
+                        <i class="time__icon fa-hourglass-half fas"></i> 30 Min
+                      </p>
+                      <p class="card__category text--medium">Chaos</p>
+                      <div class="fa fa-heart-o" aria-hidden="true" id="heart">
+                        <span class="heart"
+                          ><i class="fa-heart far border-heart"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                    <a href="#">
+                    <div class="card__image-container">
+                      <img
+                      src="img/onomatopee.png" alt="Onomatopee artwork door Jasper"
+                      />
+                    </div>
+                      <div class="card__content">
+                        <h2 class="card__title text--medium">
+                          Onomatopee (66)
+                        </h2>
+                        <p class="text--medium">Hier is de langere beschrijving van dit verhaal die meerdere regels bevat. En daarnaast ook erg lang is. Hopelijk past dit.</p>
+                    </a>
+                      <div class="card__info">
+                        <p class="text--medium">
+                          <i class="time__icon fa-hourglass-half fas"></i> 30 Min
+                        </p>
+                        <p class="card__category text--medium">Chaos</p>
+                        <div class="fa fa-heart-o" aria-hidden="true" id="heart">
+                          <span class="heart"
+                            ><i class="fa-heart far border-heart"></i
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                      <a href="#">
+                      <div class="card__image-container">
+                        <img
+                        src="img/onomatopee.png" alt="Onomatopee artwork door Jasper"
+                        />
+                      </div>
+                        <div class="card__content">
+                          <h2 class="card__title text--medium">
+                            Onomatopee (66)
+                          </h2>
+                          <p class="text--medium">Hier is de langere beschrijving van dit verhaal die meerdere regels bevat. En daarnaast ook erg lang is. Hopelijk past dit.</p>
+                      </a>
+                        <div class="card__info">
+                          <p class="text--medium">
+                            <i class="time__icon fa-hourglass-half fas"></i> 30 Min
+                          </p>
+                          <p class="card__category text--medium">Chaos</p>
+                          <div class="fa fa-heart-o" aria-hidden="true" id="heart">
+                            <span class="heart"
+                              ><i class="fa-heart far border-heart"></i
+                            ></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                        <div class="card__image-container">
+                          <img
+                          src="img/onomatopee.png" alt="Onomatopee artwork door Jasper"
+                          />
+                        </div>
+                          <div class="card__content">
+                            <h2 class="card__title text--medium">
+                              Onomatopee (66)
+                            </h2>
+                            <p class="text--medium">Hier is de langere beschrijving van dit verhaal die meerdere regels bevat. En daarnaast ook erg lang is. Hopelijk past dit.</p>
+                        </a>
+                          <div class="card__info">
+                            <p class="text--medium">
+                              <i class="time__icon fa-hourglass-half fas"></i> 30 Min
+                            </p>
+                            <p class="card__category text--medium">Chaos</p>
+                            <div class="fa fa-heart-o" aria-hidden="true" id="heart">
+                              <span class="heart"
+                                ><i class="fa-heart far border-heart"></i
+                              ></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                          <a href="#">
+                          <div class="card__image-container">
+                            <img
+                            src="img/onomatopee.png" alt="Onomatopee artwork door Jasper"
+                            />
+                          </div>
+                            <div class="card__content">
+                              <h2 class="card__title text--medium">
+                                Onomatopee (66)
+                              </h2>
+                              <p class="text--medium">Hier is de langere beschrijving van dit verhaal die meerdere regels bevat. En daarnaast ook erg lang is. Hopelijk past dit.</p>
+                          </a>
+                            <div class="card__info">
+                              <p class="text--medium">
+                                <i class="time__icon fa-hourglass-half fas"></i> 30 Min
+                              </p>
+                              <p class="card__category text--medium">Chaos</p>
+                              <div class="fa fa-heart-o" aria-hidden="true" id="heart">
+                                <span class="heart"
+                                  ><i class="fa-heart far border-heart"></i
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                            <a href="#">
+                            <div class="card__image-container">
+                              <img
+                              src="img/onomatopee.png" alt="Onomatopee artwork door Jasper"
+                              />
+                            </div>
+                              <div class="card__content">
+                                <h2 class="card__title text--medium">
+                                  Onomatopee (66)
+                                </h2>
+                                <p class="text--medium">Hier is de langere beschrijving van dit verhaal die meerdere regels bevat. En daarnaast ook erg lang is. Hopelijk past dit.</p>
+                            </a>
+                              <div class="card__info">
+                                <p class="text--medium">
+                                  <i class="time__icon fa-hourglass-half fas"></i> 30 Min
+                                </p>
+                                <p class="card__category text--medium">Chaos</p>
+                                <div class="fa fa-heart-o" aria-hidden="true" id="heart">
+                                  <span class="heart"
+                                    ><i class="fa-heart far border-heart"></i
+                                  ></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+        </section>
+      </section>
+      <section class="actie">
+        <span class="line"> </span>
+        <h2>
+          Op zoek naar informatie over reistijden en vertrekpunten van de RET?
+        </h2>
+        <div>
+          <a target="blank" href="https://www.RET.nl"
+            >Naar de RET website gaan <span class="fa fa-arrow-right"></span
+          ></a>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/filterpage.js"></script>
     <script src="js/heartlike.js"></script>
-  </main>
 </html>

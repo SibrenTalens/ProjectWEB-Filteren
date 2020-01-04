@@ -1,284 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Card Layout with CSS Grid</title>
-    <link rel="stylesheet" href="style/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style/animations.css">
-  </head>
-  <body>
-      <header>
-          <ul>
-            <li>
-              <img class="logo" src="img/logo.svg">
-            </li>
-            <li class="search-container">
-              <input type="text" class="search-box" name="searchbox" id="myInput" onkeyup="myFunction()" placeholder="Zoek verhalen..."></input>
-              <button class="search-button" name="searchbutton"><span class="fa fa-search"></span></button>
-            </li>
-          </ul>
-        </header>
-    <main>
-      <section class="verhalen slide-in-left">
-        <section class="cards" id="mySection">
-          <div class="card">
-            <a href="#">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Card Layout with CSS Grid</title>
+  <link rel="stylesheet" href="style/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <link rel="stylesheet" href="style/animations.css">
+</head>
+
+<body>
+  <header>
+    <ul>
+      <li>
+        <img class="logo" src="img/logo.svg">
+      </li>
+      <li class="search-container">
+        <input type="text" class="search-box" name="searchbox" id="myInput" onkeyup="myFunction()"
+          placeholder="Zoek verhalen..."></input>
+        <button class="search-button" name="searchbutton"><span class="fa fa-search"></span></button>
+      </li>
+    </ul>
+  </header>
+  <main>
+    <section class="verhalen slide-in-left">
+      <section class="cards" id="mySection">
+        <div class="card">
+          <a href="#">
             <div class="card__image-container">
-              <img
-              src="img/onomatopee.png" alt="Onomatopee artwork door Jasper"
-              />
+              <img src="img/onomatopee.png" alt="Onomatopee artwork door Jasper" />
             </div>
-              <div class="card__content">
-                <h2 class="card__title text--medium">
-                  Onomatopee (66)
-                </h2>
-              </a>
-                <p class="text--medium">Hier is de langere beschrijving van dit verhaal die meerdere regels bevat. En daarnaast ook erg lang is. Hopelijk past dit.</p>
-              <div class="card__info">
-                <p title="leesduur" class="text--medium">
-                  <i class="time__icon fa-hourglass-half fas"></i> 3 min
-                </p>
-                <p class="card__category text--medium">Chaos</p>
-                <div class="fa fa-heart-o" aria-hidden="true" id="heart">
-                  <span class="heart"
-                    ><i class="fa-heart far border-heart"></i
-                  ></span>
-                </div>
-              </div>
+            <div class="card__content">
+              <h2 class="card__title text--medium">
+                Onomatopee (66)
+              </h2>
+          </a>
+          <p class="text--medium">Hier is de langere beschrijving van dit verhaal die meerdere regels bevat. En
+            daarnaast ook erg lang is. Hopelijk past dit.</p>
+          <div class="card__info">
+            <p title="leesduur" class="text--medium">
+              <i class="time__icon fa-hourglass-half fas"></i> 3 min
+            </p>
+            <p class="card__category text--medium">Chaos</p>
+            <div class="fa fa-heart-o" aria-hidden="true" id="heart">
+              <span class="heart"><i class="fa-heart far border-heart"></i></span>
             </div>
           </div>
-          <div class="card">
-              <a href="#">
-              <div class="card__image-container">
-                <img
-                src="img/presentator.jpg" alt="Onomatopee artwork door Jasper"
-                />
-              </div>
-                <div class="card__content">
-                  <h2 class="card__title text--medium">
-                    Presentator die ten onrechte denkt aansluting te hebben gevonden bij 'de kids' (85)
-                  </h2>
-                </a>
-                  <p class="text--medium">Hier is de langere beschrijving van dit verhaal die meerdere regels bevat. En daarnaast ook erg lang is. Hopelijk past dit.</p>
-                <div class="card__info">
-                  <p title="leesduur" class="text--medium">
-                    <i class="time__icon fa-hourglass-half fas"></i> 2 min
-                  </p>
-                  <p class="card__category text--medium">Chaos</p>
-                  <div class="fa fa-heart-o" aria-hidden="true" id="heart">
-                    <span class="heart"
-                      ><i class="fa-heart far border-heart"></i
-                    ></span>
-                  </div>
-                </div>
-              </div>
+        </div>
+        </div>
+        <div class="card">
+          <a href="#">
+            <div class="card__image-container">
+              <img src="img/presentator.jpg" alt="Onomatopee artwork door Jasper" />
             </div>
-            <div class="card">
-                <a href="#">
-                <div class="card__image-container">
-                  <img
-                  src="img/Lepra.jpg" alt="Onomatopee artwork door Jasper"
-                  />
-                </div>
-                  <div class="card__content">
-                    <h2 class="card__title text--medium">
-                      Lepra (25)
-                    </h2>
-                  </a>
-                    <p class="text--medium">Op Centraal Station stap ik af van de kar die lijken ophaalt. Ik had een lift gekregen. Mijn zoon ligt in zijn wagentje te slapen. Arm ventje. Gelukkig weet hij niet dat er een lepra-epidemie heerst in Amsterdam. Zijn wagentje is hermetisch afgesloten, er hangt een zuurstoftankje aan. Hier leeft hij in, wij hopen dat er zo geen bacillen bij hem kunnen komen.</p>
-                  <div class="card__info">
-                    <p title="leesduur" class="text--medium">
-                      <i class="time__icon fa-hourglass-half fas"></i> 1 min
-                    </p>
-                    <p class="card__category text--medium">Relaxt</p>
-                    <div class="fa fa-heart-o" aria-hidden="true" id="heart">
-                      <span class="heart"
-                        ><i class="fa-heart far border-heart"></i
-                      ></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                  <a href="#">
-                  <div class="card__image-container">
-                    <img
-                    src="img/onomatopee.png" alt="Onomatopee artwork door Jasper"
-                    />
-                  </div>
-                    <div class="card__content">
-                      <h2 class="card__title text--medium">
-                        Onomatopee (66)
-                      </h2>
-                    </a>
-                      <p class="text--medium">Hier is de langere beschrijving van dit verhaal die meerdere regels bevat. En daarnaast ook erg lang is. Hopelijk past dit.</p>
-                    <div class="card__info">
-                      <p title="leesduur" class="text--medium">
-                        <i class="time__icon fa-hourglass-half fas"></i> 4 min
-                      </p>
-                      <p class="card__category text--medium">Wild, Energiek</p>
-                      <div class="fa fa-heart-o" aria-hidden="true" id="heart">
-                        <span class="heart"
-                          ><i class="fa-heart far border-heart"></i
-                        ></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                    <a href="#">
-                    <div class="card__image-container">
-                      <img
-                      src="img/presentator.jpg" alt="Onomatopee artwork door Jasper"
-                      />
-                    </div>
-                      <div class="card__content">
-                        <h2 class="card__title text--medium">
-                          Presentator die ten onrechte denkt aansluting te hebben gevonden bij 'de kids' (85)
-                        </h2>
-                      </a>
-                        <p class="text--medium">Hier is de langere beschrijving van dit verhaal die meerdere regels bevat. En daarnaast ook erg lang is. Hopelijk past dit.</p>
-                      <div class="card__info">
-                        <p title="leesduur" class="text--medium">
-                          <i class="time__icon fa-hourglass-half fas"></i> 30 min
-                        </p>
-                        <p class="card__category text--medium">Chill</p>
-                        <div class="fa fa-heart-o" aria-hidden="true" id="heart">
-                          <span class="heart"
-                            ><i class="fa-heart far border-heart"></i
-                          ></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                      <a href="#">
-                      <div class="card__image-container">
-                        <img
-                        src="img/Lepra.jpg" alt="Onomatopee artwork door Jasper"
-                        />
-                      </div>
-                        <div class="card__content">
-                          <h2 class="card__title text--medium">
-                            Lepra (25)
-                          </h2>
-                        </a>
-                          <p class="text--medium">Op Centraal Station stap ik af van de kar die lijken ophaalt. Ik had een lift gekregen. Mijn zoon ligt in zijn wagentje te slapen. Arm ventje. Gelukkig weet hij niet dat er een lepra-epidemie heerst in Amsterdam. Zijn wagentje is hermetisch afgesloten, er hangt een zuurstoftankje aan. Hier leeft hij in, wij hopen dat er zo geen bacillen bij hem kunnen komen.</p>
-                        <div class="card__info">
-                          <p title="leesduur" class="text--medium">
-                            <i class="time__icon fa-hourglass-half fas"></i> 30 min
-                          </p>
-                          <p class="card__category text--medium">Verrassend</p>
-                          <div class="fa fa-heart-o" aria-hidden="true" id="heart">
-                            <span class="heart"
-                              ><i class="fa-heart far border-heart"></i
-                            ></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                        <a href="#">
-                        <div class="card__image-container">
-                          <img
-                          src="img/onomatopee.png" alt="Onomatopee artwork door Jasper"
-                          />
-                        </div>
-                          <div class="card__content">
-                            <h2 class="card__title text--medium">
-                              Onomatopee (66)
-                            </h2>
-                          </a>
-                            <p class="text--medium">Hier is de langere beschrijving van dit verhaal die meerdere regels bevat. En daarnaast ook erg lang is. Hopelijk past dit.</p>
-                          <div class="card__info">
-                            <p title="leesduur" class="text--medium">
-                              <i class="time__icon fa-hourglass-half fas"></i> 30 min
-                            </p>
-                            <p class="card__category text--medium">Chaos</p>
-                            <div class="fa fa-heart-o" aria-hidden="true" id="heart">
-                              <span class="heart"
-                                ><i class="fa-heart far border-heart"></i
-                              ></span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                          <a href="#">
-                          <div class="card__image-container">
-                            <img
-                            src="img/presentator.jpg" alt="Onomatopee artwork door Jasper"
-                            />
-                          </div>
-                            <div class="card__content">
-                              <h2 class="card__title text--medium">
-                                Presentator die ten onrechte denkt aansluting te hebben gevonden bij 'de kids' (85)
-                              </h2>
-                            </a>
-                              <p class="text--medium">Hier is de langere beschrijving van dit verhaal die meerdere regels bevat. En daarnaast ook erg lang is. Hopelijk past dit.</p>
-                            <div class="card__info">
-                              <p title="leesduur" class="text--medium">
-                                <i class="time__icon fa-hourglass-half fas"></i> 30 min
-                              </p>
-                              <p class="card__category text--medium">Emotioneel</p>
-                              <div class="fa fa-heart-o" aria-hidden="true" id="heart">
-                                <span class="heart"
-                                  ><i class="fa-heart far border-heart"></i
-                                ></span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                            <a href="#">
-                            <div class="card__image-container">
-                              <img
-                              src="img/Lepra.jpg" alt="Onomatopee artwork door Jasper"
-                              />
-                            </div>
-                              <div class="card__content">
-                                <h2 class="card__title text--medium">
-                                  Lepra (25)
-                                </h2>
-                              </a>
-                                <p class="text--medium">Op Centraal Station stap ik af van de kar die lijken ophaalt. Ik had een lift gekregen. Mijn zoon ligt in zijn wagentje te slapen. Arm ventje. Gelukkig weet hij niet dat er een lepra-epidemie heerst in Amsterdam. Zijn wagentje is hermetisch afgesloten, er hangt een zuurstoftankje aan. Hier leeft hij in, wij hopen dat er zo geen bacillen bij hem kunnen komen.</p>
-                              <div class="card__info">
-                                <p title="leesduur" class="text--medium">
-                                  <i class="time__icon fa-hourglass-half fas"></i> 30 min
-                                </p>
-                                <p class="card__category text--medium">Kalmerend</p>
-                                <div class="fa fa-heart-o" aria-hidden="true" id="heart">
-                                  <span class="heart"
-                                    ><i class="fa-heart far border-heart"></i
-                                  ></span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-        </section>
+            <div class="card__content">
+              <h2 class="card__title text--medium">
+                Presentator die ten onrechte denkt aansluting te hebben gevonden bij 'de kids' (85)
+              </h2>
+          </a>
+          <p class="text--medium">Hier is de langere beschrijving van dit verhaal die meerdere regels bevat. En
+            daarnaast ook erg lang is. Hopelijk past dit.</p>
+          <div class="card__info">
+            <p title="leesduur" class="text--medium">
+              <i class="time__icon fa-hourglass-half fas"></i> 2 min
+            </p>
+            <p class="card__category text--medium">Chaos</p>
+            <div class="fa fa-heart-o" aria-hidden="true" id="heart">
+              <span class="heart"><i class="fa-heart far border-heart"></i></span>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="card">
+          <a href="#">
+            <div class="card__image-container">
+              <img src="img/Lepra.jpg" alt="Onomatopee artwork door Jasper" />
+            </div>
+            <div class="card__content">
+              <h2 class="card__title text--medium">
+                Lepra (25)
+              </h2>
+          </a>
+          <p class="text--medium">Op Centraal Station stap ik af van de kar die lijken ophaalt. Ik had een lift
+            gekregen. Mijn zoon ligt in zijn wagentje te slapen. Arm ventje. Gelukkig weet hij niet dat er een
+            lepra-epidemie heerst in Amsterdam. Zijn wagentje is hermetisch afgesloten, er hangt een zuurstoftankje aan.
+            Hier leeft hij in, wij hopen dat er zo geen bacillen bij hem kunnen komen.</p>
+          <div class="card__info">
+            <p title="leesduur" class="text--medium">
+              <i class="time__icon fa-hourglass-half fas"></i> 1 min
+            </p>
+            <p class="card__category text--medium">Relaxt</p>
+            <div class="fa fa-heart-o" aria-hidden="true" id="heart">
+              <span class="heart"><i class="fa-heart far border-heart"></i></span>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="card">
+          <a href="#">
+            <div class="card__image-container">
+              <img src="img/onomatopee.png" alt="Onomatopee artwork door Jasper" />
+            </div>
+            <div class="card__content">
+              <h2 class="card__title text--medium">
+                Onomatopee (66)
+              </h2>
+          </a>
+          <p class="text--medium">Hier is de langere beschrijving van dit verhaal die meerdere regels bevat. En
+            daarnaast ook erg lang is. Hopelijk past dit.</p>
+          <div class="card__info">
+            <p title="leesduur" class="text--medium">
+              <i class="time__icon fa-hourglass-half fas"></i> 4 min
+            </p>
+            <p class="card__category text--medium">Wild, Energiek</p>
+            <div class="fa fa-heart-o" aria-hidden="true" id="heart">
+              <span class="heart"><i class="fa-heart far border-heart"></i></span>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="card">
+          <a href="#">
+            <div class="card__image-container">
+              <img src="img/presentator.jpg" alt="Onomatopee artwork door Jasper" />
+            </div>
+            <div class="card__content">
+              <h2 class="card__title text--medium">
+                Presentator die ten onrechte denkt aansluting te hebben gevonden bij 'de kids' (85)
+              </h2>
+          </a>
+          <p class="text--medium">Hier is de langere beschrijving van dit verhaal die meerdere regels bevat. En
+            daarnaast ook erg lang is. Hopelijk past dit.</p>
+          <div class="card__info">
+            <p title="leesduur" class="text--medium">
+              <i class="time__icon fa-hourglass-half fas"></i> 30 min
+            </p>
+            <p class="card__category text--medium">Chill</p>
+            <div class="fa fa-heart-o" aria-hidden="true" id="heart">
+              <span class="heart"><i class="fa-heart far border-heart"></i></span>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="card">
+          <a href="#">
+            <div class="card__image-container">
+              <img src="img/Lepra.jpg" alt="Onomatopee artwork door Jasper" />
+            </div>
+            <div class="card__content">
+              <h2 class="card__title text--medium">
+                Lepra (25)
+              </h2>
+          </a>
+          <p class="text--medium">Op Centraal Station stap ik af van de kar die lijken ophaalt. Ik had een lift
+            gekregen. Mijn zoon ligt in zijn wagentje te slapen. Arm ventje. Gelukkig weet hij niet dat er een
+            lepra-epidemie heerst in Amsterdam. Zijn wagentje is hermetisch afgesloten, er hangt een zuurstoftankje aan.
+            Hier leeft hij in, wij hopen dat er zo geen bacillen bij hem kunnen komen.</p>
+          <div class="card__info">
+            <p title="leesduur" class="text--medium">
+              <i class="time__icon fa-hourglass-half fas"></i> 30 min
+            </p>
+            <p class="card__category text--medium">Verrassend</p>
+            <div class="fa fa-heart-o" aria-hidden="true" id="heart">
+              <span class="heart"><i class="fa-heart far border-heart"></i></span>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="card">
+          <a href="#">
+            <div class="card__image-container">
+              <img src="img/onomatopee.png" alt="Onomatopee artwork door Jasper" />
+            </div>
+            <div class="card__content">
+              <h2 class="card__title text--medium">
+                Onomatopee (66)
+              </h2>
+          </a>
+          <p class="text--medium">Hier is de langere beschrijving van dit verhaal die meerdere regels bevat. En
+            daarnaast ook erg lang is. Hopelijk past dit.</p>
+          <div class="card__info">
+            <p title="leesduur" class="text--medium">
+              <i class="time__icon fa-hourglass-half fas"></i> 30 min
+            </p>
+            <p class="card__category text--medium">Chaos</p>
+            <div class="fa fa-heart-o" aria-hidden="true" id="heart">
+              <span class="heart"><i class="fa-heart far border-heart"></i></span>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="card">
+          <a href="#">
+            <div class="card__image-container">
+              <img src="img/presentator.jpg" alt="Onomatopee artwork door Jasper" />
+            </div>
+            <div class="card__content">
+              <h2 class="card__title text--medium">
+                Presentator die ten onrechte denkt aansluting te hebben gevonden bij 'de kids' (85)
+              </h2>
+          </a>
+          <p class="text--medium">Hier is de langere beschrijving van dit verhaal die meerdere regels bevat. En
+            daarnaast ook erg lang is. Hopelijk past dit.</p>
+          <div class="card__info">
+            <p title="leesduur" class="text--medium">
+              <i class="time__icon fa-hourglass-half fas"></i> 30 min
+            </p>
+            <p class="card__category text--medium">Emotioneel</p>
+            <div class="fa fa-heart-o" aria-hidden="true" id="heart">
+              <span class="heart"><i class="fa-heart far border-heart"></i></span>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="card">
+          <a href="#">
+            <div class="card__image-container">
+              <img src="img/Lepra.jpg" alt="Onomatopee artwork door Jasper" />
+            </div>
+            <div class="card__content">
+              <h2 class="card__title text--medium">
+                Lepra (25)
+              </h2>
+          </a>
+          <p class="text--medium">Op Centraal Station stap ik af van de kar die lijken ophaalt. Ik had een lift
+            gekregen. Mijn zoon ligt in zijn wagentje te slapen. Arm ventje. Gelukkig weet hij niet dat er een
+            lepra-epidemie heerst in Amsterdam. Zijn wagentje is hermetisch afgesloten, er hangt een zuurstoftankje aan.
+            Hier leeft hij in, wij hopen dat er zo geen bacillen bij hem kunnen komen.</p>
+          <div class="card__info">
+            <p title="leesduur" class="text--medium">
+              <i class="time__icon fa-hourglass-half fas"></i> 30 min
+            </p>
+            <p class="card__category text--medium">Kalmerend</p>
+            <div class="fa fa-heart-o" aria-hidden="true" id="heart">
+              <span class="heart"><i class="fa-heart far border-heart"></i></span>
+            </div>
+          </div>
+        </div>
+        </div>
       </section>
-      <section class="actie">
-        <span class="line"> </span>
-        <h2 class="text--medium">
-          Op zoek naar informatie over reistijden en vertrekpunten van de RET?
-        </h2>
-          <a target="blank" href="https://www.RET.nl"
-            ><p class="text--medium">Naar de RET website gaan <span class="fa fa-arrow-right"></span></p>
-          ></a>
-      </section>
-    </main>
-  </body>
-  <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/filterpage.js"></script>
-    <script src="js/heartlike.js"></script>
+    </section>
+    <section class="actie">
+      <span class="line"> </span>
+      <h2 class="text--medium">
+        Op zoek naar informatie over reistijden en vertrekpunten van de RET?
+      </h2>
+      <a target="blank" href="https://www.RET.nl">
+        <p class="text--medium">Naar de RET website gaan <span class="fa fa-arrow-right"></span></p>
+        >
+      </a>
+    </section>
+  </main>
+</body>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/filterpage.js"></script>
+<script src="js/heartlike.js"></script>
+
 </html>

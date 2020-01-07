@@ -220,7 +220,7 @@ button.search-button.active {
 }
 
 .card:hover {
-  transform: translateY(-7px);
+  transform: translateY(-8px);
 }
 
 .card__header {
@@ -228,7 +228,7 @@ button.search-button.active {
 }
 
 .card__header img {
-
+  width: 100%;
 }
 
 .card__image-container {
@@ -242,6 +242,7 @@ button.search-button.active {
 }
 
 .card__content {
+  flex-grow: 1;
   padding: 20px;
 }
 

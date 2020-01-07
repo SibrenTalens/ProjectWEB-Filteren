@@ -223,6 +223,14 @@ button.search-button.active {
   transform: translateY(-7px);
 }
 
+.card__header {
+
+}
+
+.card__header img {
+
+}
+
 .card__image-container {
   width: 100%;
   padding-top: 56.25%;
@@ -231,14 +239,6 @@ button.search-button.active {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
   cursor: pointer
-}
-
-.card__image-container img {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .card__content {
@@ -251,7 +251,7 @@ button.search-button.active {
   font-weight: 600;
 }
 
-.card__info {
+.card__footer {
   display: flex;
   align-self: end;
   align-items: center;
